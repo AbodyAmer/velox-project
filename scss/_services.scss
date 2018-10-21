@@ -1,0 +1,66 @@
+.services {
+    grid-column: 1 / -1;
+    &__head1 {
+        font-size: 4rem;
+        padding-top: 8rem;
+        text-align: center;
+    }
+    &__seprated {
+        width: 13rem;
+        height: .4rem;
+        background-color: #00a5ff;
+        border-radius: 1rem;
+        margin: auto;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        justify-items: center;
+        justify-content: center;
+        grid-gap: 1rem;
+        padding-bottom: 5rem;
+        
+        
+        &__single {
+            width: 24rem;
+            margin-top: 4rem;
+            text-align: center;
+           
+            &__seprater{
+                width: 50%;
+                height: .1rem;
+                background-color: #000;
+                margin: auto;
+                margin-bottom: 1rem;
+            }
+
+            &__head {
+                font-size: 3rem;
+                text-transform: uppercase;
+            }
+            &__p {
+                font-size: 1.5rem;
+            }
+
+            &__imageback {
+                position: relative;
+                border-radius: 50%;
+                background-color: #eee;
+                width: 8rem;
+                height: 8rem;
+                margin: auto;
+                > ion-icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 3rem;
+                    color: #00a5ff
+                  }
+
+            }
+
+        }
+    }
+
+}

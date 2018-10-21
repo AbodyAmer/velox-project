@@ -1,0 +1,34 @@
+.portfolio {
+    grid-column: 1 / -1;
+    &__head {
+        text-align: center;
+        padding-top: 8rem;
+        font-size: 4rem;
+    }
+
+    &__projects{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-column-gap: 2.5rem;
+        grid-row-gap: 4rem;
+        margin-top: 4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+        &__single{
+            text-align: center;
+            box-shadow: 1rem .5rem 1rem rgba($color: #000000, $alpha: 0.5);
+            &__head {
+                color: #777;
+                padding: 2rem;
+                font-size: 2rem;
+            }
+
+            > img {
+                width: 80%;
+            }
+        }
+    }
+
+}
