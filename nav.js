@@ -13,7 +13,6 @@ window.addEventListener('resize' , () => {
 })
 
 window.addEventListener('scroll' , (e) => {
-    console.log(e.pageY)
     if(e.pageY < 150){
         document.getElementById('nav').style.backgroundColor = '#00a5ff'
         document.getElementById('nav').style.zIndex = '20'

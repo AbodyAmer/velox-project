@@ -1,0 +1,56 @@
+.reviews {
+    grid-column: 1 / -1;
+&__t {
+    position: relative;
+}
+
+    &__list {
+        text-align: center;
+    }
+    &__img{
+
+        margin: 6rem 1rem;
+        display: inline-block;
+        width: 10rem;
+        height: 10rem;
+
+        
+        > img {
+            width: 100%;
+            border-radius: 50%;
+            opacity: .5;
+        }
+    }
+
+    &__text{
+        width: 60%;
+        text-align: center;
+        font-size: 3rem;
+        color: #777;
+        margin: auto;
+        padding-bottom: 8rem;
+        position: absolute;
+        left: -70%;
+    }
+}
+
+.active {
+
+    transition: all .3s;
+    > img{
+    opacity: 1;
+    transform: scale(1.2);
+    }
+
+    
+    &__text {
+        transition: all .3s;
+        left: 20%;
+       
+    }
+}
+
+.afteractive{
+    transition: all .3s;
+    left: 100%;
+}
